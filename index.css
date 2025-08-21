@@ -313,14 +313,7 @@ header a:hover{
    )
    ,url("media/phyton.cropped.png");
      }
-
-   #caracteristicas{ 
-     background-image: url(media/background-2.jpeg);
-     background-repeat: no-repeat;
-     background-size: 500px 400px;
-     background-position: calc(100vw - 200px) 120px;
-   }
-
+    
    #caracteristicas .container{
       text-align: initial;
    }
@@ -341,10 +334,35 @@ header a:hover{
       justify-content: flex-end;
    }
 
-@media (min-width: 800px) {
-    #caracteristicas{
-      background-position-x: calc(100vw - 800px);
-    }
+#caracteristicas { 
+  background-image: url(media/background-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: 500px 400px;
+  background-position: calc(100vw - 200px) 120px;
+}
+
+/* Ajuste para celulares (iPhone XR y similares) */
+@media (max-width: 480px) {
+  #caracteristicas {
+    background-size: 280px auto; /* achica el logo */
+    background-position: center 80px; /* lo centra */
+  }
+}
+
+/* Ajuste para tablets */
+@media (min-width: 481px) and (max-width: 800px) {
+  #caracteristicas {
+    background-size: 400px auto;
+    background-position: center 100px;
+  }
+}
+
+/* Ajuste para escritorio */
+@media (min-width: 801px) {
+  #caracteristicas {
+    background-position-x: calc(100vw - 800px);
+  }
+}
 
 }
 
@@ -352,6 +370,7 @@ header a:hover{
 
 
  }
+
 
 
 
