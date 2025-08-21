@@ -334,42 +334,25 @@ header a:hover{
       justify-content: flex-end;
    }
 
-#caracteristicas { 
+ #caracteristicas { 
   background-image: url(media/background-2.jpeg);
   background-repeat: no-repeat;
-  background-size: 500px 400px;
-  background-position: calc(100vw - 200px) 120px;
+  background-size: contain;   /* hace que el logo siempre entre completo */
+  background-position: center top; /* lo centra */
+  background-color: #000;     /* fondo por si sobra espacio */
+  min-height: 300px;          /* ajustá según el alto que necesites */
 }
 
-/* Ajuste para celulares (iPhone XR y similares) */
+/* Ajuste para pantallas chicas (iPhone XR, etc.) */
 @media (max-width: 480px) {
   #caracteristicas {
-    background-size: 280px auto; /* achica el logo */
-    background-position: center 80px; /* lo centra */
+    min-height: 200px;  /* achicar un poco en celulares */
   }
 }
-
-/* Ajuste para tablets */
-@media (min-width: 481px) and (max-width: 800px) {
-  #caracteristicas {
-    background-size: 400px auto;
-    background-position: center 100px;
-  }
-}
-
-/* Ajuste para escritorio */
-@media (min-width: 801px) {
-  #caracteristicas {
-    background-position-x: calc(100vw - 800px);
-  }
-}
-
-}
-
-
 
 
  }
+
 
 
 
