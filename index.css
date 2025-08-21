@@ -318,7 +318,7 @@ header a:hover{
      background-image: url(media/background-2.jpeg);
      background-repeat: no-repeat;
      background-size: 500px 400px;
-     background-position: calc(200vw -500px) 120px;
+     background-position: calc(500vw -500px) 120px;
    }
 
    #caracteristicas .container{
@@ -352,5 +352,6 @@ header a:hover{
 
 
  }
+
 
 
