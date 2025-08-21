@@ -337,10 +337,9 @@ header a:hover{
  #caracteristicas { 
   background-image: url(media/background-2.jpeg);
   background-repeat: no-repeat;
-  background-size: contain;   /* hace que el logo siempre entre completo */
-  background-position: center top; /* lo centra */
-  background-color: #000;     /* fondo por si sobra espacio */
-  min-height: 300px;          /* ajustá según el alto que necesites */
+  background-size: cover;   /* ocupa todo el ancho */
+  background-position: center; /* lo centra */
+  min-height: 300px;        /* asegura espacio para mostrarlo */
 }
 
 /* Ajuste para pantallas chicas (iPhone XR, etc.) */
@@ -352,6 +351,7 @@ header a:hover{
 
 
  }
+
 
 
 
