@@ -341,7 +341,7 @@ header a:hover{
       justify-content: flex-end;
    }
 
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
     #caracteristicas{
       background-position-x: calc(100vw - 800px);
     }
@@ -352,3 +352,4 @@ header a:hover{
 
 
  }
+
